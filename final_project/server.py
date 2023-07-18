@@ -10,7 +10,7 @@ from machinetranslation import translator
 
 app = Flask("Web Translator")
 
-@app.route("/englishToFrench")
+@app.route("/english_to_french")
 def english_to_french():
     """
     Translates English text to French.
@@ -19,7 +19,7 @@ def english_to_french():
     translation = translator.english_to_french(text_to_translate)
     return translation
 
-@app.route("/frenchToEnglish")
+@app.route("/french_to_english")
 def french_to_english():
     """
     Translates French text to English.

@@ -13,7 +13,7 @@ class TestsTranslation(unittest.TestCase):
         """
         Test the translation from English to French.
         """
-        translation = english_to_french("Bonjour")
+        translation = english_to_french("Hello")
         self.assertEqual(translation, "Bonjour")
         self.assertNotEqual(translation, "Hola")
         
@@ -22,7 +22,7 @@ class TestsTranslation(unittest.TestCase):
         Test the translation from French to English. 
         """
         translation = french_to_english("Bonjour")
-        self.assertEqual(translation, "Bonjour")
+        self.assertEqual(translation, "Hello")
         self.assertNotEqual(translation, "Hola")
 
 if __name__ == '__main__':
